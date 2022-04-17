@@ -945,26 +945,18 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactDom = require("react-dom");
 var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
+var _mainView = require("./components/main-view/main-view");
 //Import statement to bundle index.scss
 var _indexCss = require("./index.css");
 //Main component (will eventually use all the others)
 class MyStoreApplication extends _reactDefault.default.Component {
     render() {
-        return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
-            className: "my-store",
+        return(/*#__PURE__*/ _jsxRuntime.jsx(_mainView.MainView, {
             __source: {
                 fileName: "src/index.jsx",
-                lineNumber: 11
+                lineNumber: 12
             },
-            __self: this,
-            children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
-                __source: {
-                    fileName: "src/index.jsx",
-                    lineNumber: 12
-                },
-                __self: this,
-                children: "Welcome to the Best Online Store"
-            })
+            __self: this
         }));
     }
 }
@@ -978,7 +970,7 @@ _reactDomDefault.default.render(/*#__PURE__*/ _reactDefault.default.createElemen
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","react-dom":"gkWJK","./index.css":"1dfYM","@parcel/transformer-js/src/esmodule-helpers.js":"ebcMM","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"dbVEk"}],"8xIwr":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","react-dom":"gkWJK","./index.css":"1dfYM","@parcel/transformer-js/src/esmodule-helpers.js":"ebcMM","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"dbVEk","./components/main-view/main-view":"2zHas"}],"8xIwr":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-jsx-runtime.development.js');
 
@@ -25211,6 +25203,65 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"2WhKC"}]},["6GtIe","4cCPZ","dLPEP"], "dLPEP", "parcelRequire5561")
+},{"react-refresh/runtime":"2WhKC"}],"2zHas":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$35bf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$35bf.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MainView", ()=>MainView
+);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _mainViewCss = require("./main-view.css");
+class MainView extends _reactDefault.default.Component {
+    render() {
+        return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+            className: "main-view",
+            __source: {
+                fileName: "src/components/main-view/main-view.jsx",
+                lineNumber: 7
+            },
+            __self: this,
+            children: [
+                /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                    __source: {
+                        fileName: "src/components/main-view/main-view.jsx",
+                        lineNumber: 8
+                    },
+                    __self: this,
+                    children: "Jeans"
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                    __source: {
+                        fileName: "src/components/main-view/main-view.jsx",
+                        lineNumber: 9
+                    },
+                    __self: this,
+                    children: "T-shirt"
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                    __source: {
+                        fileName: "src/components/main-view/main-view.jsx",
+                        lineNumber: 10
+                    },
+                    __self: this,
+                    children: "Boots"
+                })
+            ]
+        }));
+    }
+}
+
+  $parcel$ReactRefreshHelpers$35bf.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"ebcMM","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"dbVEk","./main-view.css":"6Ipr3"}],"6Ipr3":[function() {},{}]},["6GtIe","4cCPZ","dLPEP"], "dLPEP", "parcelRequire5561")
 
 //# sourceMappingURL=index.6701a6e1.js.map
