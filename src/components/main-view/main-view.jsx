@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { ProductCard } from '../product-card/product-card';
 import './main-view.css';
 
 export class MainView extends React.Component {
@@ -25,11 +26,10 @@ export class MainView extends React.Component {
   render() {
     const { products } = this.state;
     console.log(products);
+
     return (
       <div className='main-view'>
-        <div>Jeans</div>
-        <div>T-shirt</div>
-        <div>Boots</div>
+        {products.map(product => <ProductCard key={product.title} />)}
       </div>
     );
   }
