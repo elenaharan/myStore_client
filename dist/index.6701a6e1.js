@@ -25221,19 +25221,37 @@ var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _mainViewCss = require("./main-view.css");
 class MainView extends _reactDefault.default.Component {
+    constructor(){
+        super();
+        this.state = {
+            products: []
+        };
+    }
+    componentDidMount() {
+        _axiosDefault.default.get('https://my-practice-api.herokuapp.com/products').then((response)=>{
+            this.setState({
+                products: response.data
+            });
+            console.log(response.data);
+        }).catch((error)=>{
+            console.log(error);
+        });
+    }
     render() {
+        const { products  } = this.state;
+        console.log(products);
         return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
             className: "main-view",
             __source: {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 8
+                lineNumber: 29
             },
             __self: this,
             children: [
                 /*#__PURE__*/ _jsxRuntime.jsx("div", {
                     __source: {
                         fileName: "src/components/main-view/main-view.jsx",
-                        lineNumber: 9
+                        lineNumber: 30
                     },
                     __self: this,
                     children: "Jeans"
@@ -25241,7 +25259,7 @@ class MainView extends _reactDefault.default.Component {
                 /*#__PURE__*/ _jsxRuntime.jsx("div", {
                     __source: {
                         fileName: "src/components/main-view/main-view.jsx",
-                        lineNumber: 10
+                        lineNumber: 31
                     },
                     __self: this,
                     children: "T-shirt"
@@ -25249,7 +25267,7 @@ class MainView extends _reactDefault.default.Component {
                 /*#__PURE__*/ _jsxRuntime.jsx("div", {
                     __source: {
                         fileName: "src/components/main-view/main-view.jsx",
-                        lineNumber: 11
+                        lineNumber: 32
                     },
                     __self: this,
                     children: "Boots"
