@@ -28,9 +28,11 @@ export class MainView extends React.Component {
     console.log(products);
 
     return (
-      <div className='main-view'>
-        {products.map(product => <ProductCard key={product.title} product={product} />)}
-      </div>
+      <>
+        <div className='main-view'>
+          {products.map(product => <ProductCard key={product.title} product={product} />)}
+        </div>
+      </>
     );
   }
 }
