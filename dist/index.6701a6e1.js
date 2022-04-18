@@ -970,7 +970,7 @@ _reactDomDefault.default.render(/*#__PURE__*/ _reactDefault.default.createElemen
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","react-dom":"gkWJK","./index.css":"1dfYM","@parcel/transformer-js/src/esmodule-helpers.js":"ebcMM","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"dbVEk","./components/main-view/main-view":"2zHas"}],"8xIwr":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","react-dom":"gkWJK","@parcel/transformer-js/src/esmodule-helpers.js":"ebcMM","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"dbVEk","./components/main-view/main-view":"2zHas","./index.css":"1dfYM"}],"8xIwr":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-jsx-runtime.development.js');
 
@@ -25051,7 +25051,7 @@ module.exports = require('./cjs/scheduler.development.js');
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === 'function') __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"1dfYM":[function() {},{}],"ebcMM":[function(require,module,exports) {
+},{}],"ebcMM":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -25266,7 +25266,7 @@ class MainView extends _reactDefault.default.Component {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","axios":"iYoWk","./main-view.css":"6Ipr3","@parcel/transformer-js/src/esmodule-helpers.js":"ebcMM","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"dbVEk","../product-card/product-card":"9D12e"}],"iYoWk":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","axios":"iYoWk","../product-card/product-card":"9D12e","./main-view.css":"6Ipr3","@parcel/transformer-js/src/esmodule-helpers.js":"ebcMM","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"dbVEk"}],"iYoWk":[function(require,module,exports) {
 module.exports = require('./lib/axios');
 
 },{"./lib/axios":"3QmO2"}],"3QmO2":[function(require,module,exports) {
@@ -26830,7 +26830,7 @@ var utils = require('./../utils');
     return utils.isObject(payload) && payload.isAxiosError === true;
 };
 
-},{"./../utils":"hOPY0"}],"6Ipr3":[function() {},{}],"9D12e":[function(require,module,exports) {
+},{"./../utils":"hOPY0"}],"9D12e":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$cb99 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -26902,6 +26902,6 @@ class ProductCard extends _reactDefault.default.Component {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"ebcMM","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"dbVEk","react/jsx-runtime":"8xIwr"}]},["6GtIe","4cCPZ","dLPEP"], "dLPEP", "parcelRequire5561")
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"ebcMM","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"dbVEk"}],"6Ipr3":[function() {},{}],"1dfYM":[function() {},{}]},["6GtIe","4cCPZ","dLPEP"], "dLPEP", "parcelRequire5561")
 
 //# sourceMappingURL=index.6701a6e1.js.map
